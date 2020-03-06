@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77eac887-a882-45d1-8f3d-d8ca3e98fc29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ramesha/ecommerce/productservice/controller/FeedbackController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ramesha/ecommerce/productservice/model/Feature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ramesha/ecommerce/productservice/model/Feedback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ramesha/ecommerce/productservice/model/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ramesha/ecommerce/productservice/repository/FeedbackRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ramesha/ecommerce/productservice/service/FeedbackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ramesha/ecommerce/productservice/service/FeedbackServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart_service/src/main/java/com/ramesha/ecommerce/cartservice/commonmodel/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cart_service/src/main/java/com/ramesha/ecommerce/cartservice/model/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ramesha/ecommerce/productservice/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ramesha/ecommerce/productservice/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ramesha/ecommerce/productservice/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ramesha/ecommerce/productservice/model/Product.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,26 +81,34 @@
       <screen x="0" y="27" width="1366" height="675" />
     </state>
     <state x="491" y="51" width="374" height="633" key="#com.intellij.ide.util.MemberChooser/0.27.1366.675@0.27.1366.675" timestamp="1583473098364" />
-    <state width="1320" height="201" key="GridCell.Tab.0.bottom" timestamp="1583473442838">
+    <state x="461" y="111" width="424" height="520" key="FileChooserDialogImpl" timestamp="1583473989750">
       <screen x="0" y="27" width="1366" height="675" />
     </state>
-    <state width="1320" height="201" key="GridCell.Tab.0.bottom/0.27.1366.675@0.27.1366.675" timestamp="1583473442838" />
-    <state width="1320" height="201" key="GridCell.Tab.0.center" timestamp="1583473442838">
+    <state x="461" y="111" width="424" height="520" key="FileChooserDialogImpl/0.27.1366.675@0.27.1366.675" timestamp="1583473989750" />
+    <state width="1320" height="70" key="GridCell.Tab.0.bottom" timestamp="1583473995845">
       <screen x="0" y="27" width="1366" height="675" />
     </state>
-    <state width="1320" height="201" key="GridCell.Tab.0.center/0.27.1366.675@0.27.1366.675" timestamp="1583473442838" />
-    <state width="1320" height="201" key="GridCell.Tab.0.left" timestamp="1583473442837">
+    <state width="1320" height="70" key="GridCell.Tab.0.bottom/0.27.1366.675@0.27.1366.675" timestamp="1583473995845" />
+    <state width="1320" height="70" key="GridCell.Tab.0.center" timestamp="1583473995844">
       <screen x="0" y="27" width="1366" height="675" />
     </state>
-    <state width="1320" height="201" key="GridCell.Tab.0.left/0.27.1366.675@0.27.1366.675" timestamp="1583473442837" />
-    <state width="1320" height="201" key="GridCell.Tab.0.right" timestamp="1583473442838">
+    <state width="1320" height="70" key="GridCell.Tab.0.center/0.27.1366.675@0.27.1366.675" timestamp="1583473995844" />
+    <state width="1320" height="70" key="GridCell.Tab.0.left" timestamp="1583473995844">
       <screen x="0" y="27" width="1366" height="675" />
     </state>
-    <state width="1320" height="201" key="GridCell.Tab.0.right/0.27.1366.675@0.27.1366.675" timestamp="1583473442838" />
+    <state width="1320" height="70" key="GridCell.Tab.0.left/0.27.1366.675@0.27.1366.675" timestamp="1583473995844" />
+    <state width="1320" height="70" key="GridCell.Tab.0.right" timestamp="1583473995844">
+      <screen x="0" y="27" width="1366" height="675" />
+    </state>
+    <state width="1320" height="70" key="GridCell.Tab.0.right/0.27.1366.675@0.27.1366.675" timestamp="1583473995844" />
     <state x="172" y="27" width="1012" height="675" key="SettingsEditor" timestamp="1583468401793">
       <screen x="0" y="27" width="1366" height="675" />
     </state>
     <state x="172" y="27" width="1012" height="675" key="SettingsEditor/0.27.1366.675@0.27.1366.675" timestamp="1583468401793" />
+    <state x="0" y="67" width="1356" height="602" key="new project wizard" timestamp="1583473992087">
+      <screen x="0" y="27" width="1366" height="675" />
+    </state>
+    <state x="0" y="67" width="1356" height="602" key="new project wizard/0.27.1366.675@0.27.1366.675" timestamp="1583473992087" />
     <state x="346" y="26" width="672" height="678" key="search.everywhere.popup" timestamp="1583396831090">
       <screen x="0" y="27" width="1366" height="675" />
     </state>
