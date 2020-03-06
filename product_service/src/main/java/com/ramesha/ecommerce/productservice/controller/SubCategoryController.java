@@ -1,5 +1,6 @@
 package com.ramesha.ecommerce.productservice.controller;
 
+import com.ramesha.ecommerce.productservice.model.Product;
 import com.ramesha.ecommerce.productservice.model.SubCategory;
 import com.ramesha.ecommerce.productservice.service.SubCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,9 @@ public class SubCategoryController {
 
     @RequestMapping("/subcategory/save")
     public SubCategory saveSubCategory(@RequestBody SubCategory subCategory){
+        for(Product product : subCategory.getProducts()){
+            product.setSubCategory(subCategory);
+        }
         return subCategoryService.saveSubCategory(subCategory);
     }
 }

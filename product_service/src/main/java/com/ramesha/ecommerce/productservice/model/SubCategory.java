@@ -21,7 +21,7 @@ public class SubCategory {
     Category category;
 
     @OneToMany(cascade = CascadeType.ALL, targetEntity = Product.class, mappedBy = "subCategory")
-    List<Product> product;
+    List<Product> products;
 
     public Category getCategory() {
         return category;
@@ -31,12 +31,12 @@ public class SubCategory {
         this.category = category;
     }
 
-    public List<Product> getProduct() {
-        return product;
+    public List<Product> getProducts() {
+        return products;
     }
 
-    public void setProduct(List<Product> product) {
-        this.product = product;
+    public void setProducts(List<Product> products) {
+        this.products = products;
     }
 
     public int getId() {

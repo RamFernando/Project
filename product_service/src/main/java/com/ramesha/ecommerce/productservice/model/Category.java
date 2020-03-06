@@ -14,14 +14,14 @@ public class Category {
     String category;
 
     @OneToMany(cascade = CascadeType.ALL, targetEntity = SubCategory.class, mappedBy = "category")
-    List<SubCategory> subCategory;
+    List<SubCategory> subCategories;
 
-    public List<SubCategory> getSubCategory() {
-        return subCategory;
+    public List<SubCategory> getSubCategories() {
+        return subCategories;
     }
 
-    public void setSubCategory(List<SubCategory> subCategory) {
-        this.subCategory = subCategory;
+    public void setSubCategories(List<SubCategory> subCategories) {
+        this.subCategories = subCategories;
     }
 
     public int getId() {
