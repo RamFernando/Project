@@ -14,9 +14,22 @@ public class Product {
     double price;
     double discount;
 
-//    SubCategory subCategory;
+    Product[] products;
 
-//    Stock stock;
+    public Product(int id, String productname, double price, double discount) {
+        this.id = id;
+        this.productname = productname;
+        this.price = price;
+        this.discount = discount;
+    }
+
+    public Product[] getProducts() {
+        return products;
+    }
+
+    public void setProducts(Product[] products) {
+        this.products = products;
+    }
 
     public int getId() {
         return id;
