@@ -5,7 +5,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "Customer")
-public class Customer {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,7 +14,7 @@ public class Customer {
     String fname;
     String lname;
 
-    @OneToMany(cascade = CascadeType.ALL, targetEntity = Address.class, mappedBy = "customer")
+    @OneToMany(cascade = CascadeType.ALL, targetEntity = Address.class, mappedBy = "user")
     List<Address> addresses;
 
     @OneToOne(cascade = CascadeType.ALL)
