@@ -1,9 +1,8 @@
-package com.ramesha.ecommerce.productservice.model;
+package com.ramesha.ecommerce.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Table(name = "SubCategory")
@@ -20,23 +19,12 @@ public class SubCategory {
     @JsonIgnore
     Category category;
 
-    @OneToMany(cascade = CascadeType.ALL, targetEntity = Product.class, mappedBy = "subCategory")
-    List<Product> products;
-
     public Category getCategory() {
         return category;
     }
 
     public void setCategory(Category category) {
         this.category = category;
-    }
-
-    public List<Product> getProducts() {
-        return products;
-    }
-
-    public void setProducts(List<Product> products) {
-        this.products = products;
     }
 
     public int getId() {

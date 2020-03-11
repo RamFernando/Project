@@ -3,10 +3,9 @@ package com.ramesha.ecommerce.productservice.controller;
 import com.ramesha.ecommerce.productservice.model.Product;
 import com.ramesha.ecommerce.productservice.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/services")
@@ -24,4 +23,10 @@ public class ProductController {
     public Product saveProduct(@RequestBody Product product){
         return productService.saveProduct(product);
     }
+
+//    @RequestMapping(value = "/product/getbyid/{id}")
+//    public List<Product> getProducts(@PathVariable Integer id){
+//        List<Product> productsByCartId = productService.getProductById(id);
+//        return productsByCartId;
+//    }
 }

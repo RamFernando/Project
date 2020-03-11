@@ -18,11 +18,6 @@ public class Product {
     double price;
     double discount;
 
-    @ManyToOne
-    @JoinColumn
-    @JsonIgnore
-    SubCategory subCategory;
-
     @Fetch(FetchMode.SUBSELECT)
     @ManyToMany(cascade = CascadeType.ALL, fetch=FetchType.EAGER)
     @JoinTable(joinColumns = { @JoinColumn(name = "product_id", referencedColumnName = "id") }, inverseJoinColumns = {
@@ -31,9 +26,6 @@ public class Product {
 
     @OneToOne(cascade = CascadeType.ALL)
     Stock stock;
-
-    @OneToMany(targetEntity = Feedback.class,mappedBy = "product",cascade = CascadeType.ALL)
-    List<Feedback> feedback;
 
     public Stock getStock() {
         return stock;
@@ -49,14 +41,6 @@ public class Product {
 
     public void setFeatures(List<Feature> features) {
         this.features = features;
-    }
-
-    public SubCategory getSubCategory() {
-        return subCategory;
-    }
-
-    public void setSubCategory(SubCategory subCategory) {
-        this.subCategory = subCategory;
     }
 
     public int getId() {
