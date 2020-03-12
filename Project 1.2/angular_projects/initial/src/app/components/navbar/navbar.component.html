@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#" setmycolor>Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+
+      <li (click)="stateChanger()" class="nav-item"><a class="nav-link" href="#">Change State</a></li>
+      <li routerLinkActive="active" class="nav-item"><a [routerLink]="['activities','30']" class="nav-link">Activities</a></li>
+      <li routerLinkActive="active" class="nav-item"><a routerLink="dashboard" class="nav-link">Dashboard</a></li>
+      <li routerLinkActive="active" class="nav-item"><a [routerLink]="['dashboard']" [queryParams]="{item:'new'}" class="nav-link">Items</a></li>
+    </ul>
+
+    <div *ngIf="state;then logged else logout">state true</div>
+
+  </div>
+</nav>
+
+<ng-template #logout>
+  <li class="btn btn-info btn-sm"><a class="nav-link" href="#">Please Login</a></li>
+</ng-template>
+
+<ng-template #logged>
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</ng-template>
+
